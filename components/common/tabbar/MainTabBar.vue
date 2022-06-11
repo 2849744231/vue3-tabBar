@@ -1,16 +1,21 @@
 <template>   
     <div id="tabbar">
+        <!--这里path跳转路径，activeColor激活时，显示的文字-->
         <TabBarItem path="/home" activeColor="#fc5979">
             <template #item-icon>
+                <!-- 没有激活时，的图片 -->
                 <img src="@/assets/imgs/tabbar/home.png" />
             </template>
             <template #item-icon-active>
+                <!-- 激活时，的图片  -->
                 <img src="@/assets/imgs/tabbar/home_active.png"/>
             </template>
             <template #item-text>
+                <!-- tabBar的文字 -->
                 <div>首页</div>
             </template>         
         </TabBarItem>
+        <!-- 当然，后面也可以添加多个的 -->
         <TabBarItem path="/category" activeColor="#fc5979">
             <template #item-icon>
                 <img src="@/assets/imgs/tabbar/category.png" />
@@ -20,28 +25,6 @@
             </template>
             <template #item-text>
                 <div>分类</div>
-            </template>         
-        </TabBarItem>
-        <TabBarItem path="/cart" activeColor="#fc5979">
-            <template #item-icon>
-                <img src="@/assets/imgs/tabbar/cate.png" />
-            </template>
-            <template #item-icon-active>
-                <img src="@/assets/imgs/tabbar/cate_active.png"/>
-            </template>
-            <template #item-text>
-                <div>购物车</div>
-            </template>         
-        </TabBarItem>
-        <TabBarItem path="/me" activeColor="#fc5979">
-            <template #item-icon>
-                <img src="@/assets/imgs/tabbar/me.png" />
-            </template>
-            <template #item-icon-active>
-                <img src="@/assets/imgs/tabbar/me_active.png"/>
-            </template>
-            <template #item-text>
-                <div>购物车</div>
             </template>         
         </TabBarItem>
     </div>
